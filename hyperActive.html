@@ -12,24 +12,53 @@
 </head>
 <body>
     <header class="navigation-bar">
-        <div class="menu-button open">
+        <div class="menu-button">
             <div id="menu-line-top" class="menu-line"></div>
             <div id="menu-line-middle" class="menu-line"></div>
             <div id="menu-line-bottom" class="menu-line"></div>
         </div>
         <div class="navigation-container">
-            <ul class="nav-links-container">
-              <!--  <li class="nav-link">
-                    <img id="home-btn" src="hyperactive_logo.png" alt="home-btn">
-                </li>-->
-                <li class="nav-link splitter">קריירות</li>
-                <li class="nav-link splitter">למה ללמוד אצלנו?</li>
-                <li class="nav-link splitter">כאן תמצאו את הבוגרים שלנו</li>
-                <li class="nav-link splitter">קצת עלינו</li>
-                <li class="nav-link splitter">איך זה עובד</li>
-                <li class="nav-link splitter">שאלות שכנראה תשאלו</li>
-                <li class="nav-link splitter">שירות לציבור</li>
-            </ul>
+                <ul class="nav-links-container">
+                    <li class="nav-link home">
+                        <div>בית</div>
+                    </li>
+                    <li class="nav-link splitter" id="careers">
+                        <div>קריירות</div>
+                        <i class="fas fa-sort-down"></i>
+                        <div class="menu-container">
+                            <div class="drop-down drop-down-inner-menu">
+                                <div class="careers-menu">
+                                    <a id="navigationbar-cyber-page-link">סייבר ואבטחת מידע |  ethical hacking</a>
+                                    <a id="navigationbar-system-page-link"> ניהול  רשתות ומחשוב | system administration</a>
+                                    <a id="navigationbar-marketing-page-link"> שיווק דיגיטלי | seo/social/sales&amp;marketing</a>
+                                    <a id="navigationbar-qa-page-link">בדיקת תוכנה | qa &amp; automation</a>
+                                    <a id="navigationbar-ui-page-link">עיצוב גרפי | ui/ux</a>
+                                    <a id="navigationbar-fullstack-page-link">פיתוח תוכנה | full stack  </a>
+                                    <a id="navigationbar-embedded-page-link">פיתוח מערכות משובצות מחשב  | embedded</a>
+                                    <a id="navigationbar-mobile-page-link">פיתוח אפליקציות מובייל  | ios/android</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="mobile-careers-menu">
+                            <a id="navigationbar-cyber-page-link">סייבר ואבטחת מידע |  ethical hacking</a>
+                            <a id="navigationbar-system-page-link"> ניהול  רשתות ומחשוב | system administration</a>
+                            <a id="navigationbar-marketing-page-link"> שיווק דיגיטלי | seo/social/sales&amp;marketing</a>
+                            <a id="navigationbar-qa-page-link">בדיקת תוכנה | qa &amp; automation</a>
+                            <a id="navigationbar-ui-page-link">עיצוב גרפי | ui/ux</a>
+                            <a id="navigationbar-fullstack-page-link">פיתוח תוכנה | full stack  </a>
+                            <a id="navigationbar-embedded-page-link">פיתוח מערכות משובצות מחשב  | embedded</a>
+                            <a id="navigationbar-mobile-page-link">פיתוח אפליקציות מובייל  | ios/android</a>
+                         </div>
+                    </li>
+                    
+                    <li class="nav-link splitter">למה ללמוד אצלנו?</li>
+                    <li class="nav-link splitter">כאן תמצאו את הבוגרים שלנו</li>
+                    <li class="nav-link splitter">קצת עלינו</li>
+                    <li class="nav-link splitter">איך זה עובד</li>
+                    <li class="nav-link splitter">שאלות שכנראה תשאלו</li>
+                    <li class="nav-link">שירות לציבור</li>
+                </ul>
         </div>
         <a href="/">
             <div class="logo-container">
@@ -40,6 +69,41 @@
         
     </header>
     <main>
+        <div class="modal-background show">
+            <div class="modal">
+                <div class="modal-exit-button">
+                    <div id="exit-line1" class="exit-line"></div>
+                    <div id="exit-line2" class="exit-line"></div>
+                </div>
+                <div class="modal-content">
+                    <div class="modal-text">
+                        <div class="modal-title">מעוניינים לקבל ייעוץ חינם לגבי לימודי הייטק? השאירו פרטים! </div>
+                    </div>
+                    <form class="modal-form">
+                        <div class="inputs-group">
+                            <div></div>
+                            <div class="input-wrapper">
+                                <input class="modal-input" name="name" id="modal-name-input" placeholder="שם מלא" type="text"></div>
+                                <div class="input-wrapper">
+                                    <input class="modal-input" name="phone" id="modal-phone-input" placeholder="מספר טלפון" type="text">
+                                </div>
+                                <div class="input-wrapper">
+                                    <input class="modal-input" name="email" id="modal-email-input" placeholder="אי-מייל" type="text">
+                                </div>
+                            </div>
+                            <div class="agree-checkbox">
+                                <label class="agree-explain">אני מאשר קבלת עדכונים ומבצעים מהייפראקטיב.</label>
+                                <input class="checkbox" type="checkbox" checked="">
+                            </div>
+                            <button class="modal-button">
+                                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                             דברו איתי 
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         <div class="banner">
             <div class="header1">לא עבדת?</div>
             <div class="header2">לא שילמת!</div>
@@ -51,45 +115,141 @@
             <div class="courses">
                 <h1 class="course-title">מה הקריירה שלך בהיי-טק?</h1>
                 <div class="course-container">
-                    <div id="qa" class="course">
-                        <img class="course-image" src="qa.png" alt="">
+                    <div id="hacking" class="course">
+                        <img class="course-image" src="hacking.png" alt="">
                         <div class="course-seperator"></div>
-                        <div class="course-name">בדיקת תוכנה | qa & automation</div>
-                    </div>
-                    <div id="seo" class="course">
-                        <img class="course-image" src="seo.png" alt="">
-                        <div class="course-seperator"></div>
-                        <div class="course-name">שיווק דיגיטלי | seo/social/sales&marketing</div>
+                        <div class="course-name">סייבר ואבטחת מידע | ethnical hacking</div>
+                        <div class="arrow-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                <g id="Layer_2" data-name="Layer 2">
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <path class="cls-1" d="M15,30A15,15,0,1,1,30,15,15,15,0,0,1,15,30ZM25,13.75a1.26,1.26,0,0,0-1.25-1.25H14l3.69-3.69a1.23,1.23,0,0,0,0-1.76L15.86,5.27A1.24,1.24,0,0,0,15,4.92a1.26,1.26,0,0,0-.88.35L7,12.34,5.25,14.12a1.28,1.28,0,0,0,0,1.76L7,17.66l7.07,7.07a1.26,1.26,0,0,0,.88.35,1.24,1.24,0,0,0,.88-.35L17.64,23a1.28,1.28,0,0,0,0-1.76L14,17.5h9.8A1.26,1.26,0,0,0,25,16.25Z"></path>
+                                    </g>
+                                </g>
+                                <defs></defs>
+                                <title>arrow</title>
+                                <script xmlns=""></script>
+                            </svg>
+                        </div>
                     </div>
                     <div id="system" class="course">
                         <img class="course-image" src="system.png" alt="">
                         <div class="course-seperator"></div>
                         <div class="course-name">ניהול רשתות ומחשוב | system administration</div>
+                        <div class="arrow-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                <g id="Layer_2" data-name="Layer 2">
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <path class="cls-1" d="M15,30A15,15,0,1,1,30,15,15,15,0,0,1,15,30ZM25,13.75a1.26,1.26,0,0,0-1.25-1.25H14l3.69-3.69a1.23,1.23,0,0,0,0-1.76L15.86,5.27A1.24,1.24,0,0,0,15,4.92a1.26,1.26,0,0,0-.88.35L7,12.34,5.25,14.12a1.28,1.28,0,0,0,0,1.76L7,17.66l7.07,7.07a1.26,1.26,0,0,0,.88.35,1.24,1.24,0,0,0,.88-.35L17.64,23a1.28,1.28,0,0,0,0-1.76L14,17.5h9.8A1.26,1.26,0,0,0,25,16.25Z"></path>
+                                    </g>
+                                </g>
+                                <defs></defs>
+                                <title>arrow</title>
+                                <script xmlns=""></script>
+                            </svg>
+                        </div>
                     </div>
-                    <div id="hacking" class="course">
-                        <img class="course-image" src="hacking.png" alt="">
+                    <div id="seo" class="course">
+                        <img class="course-image" src="seo.png" alt="">
                         <div class="course-seperator"></div>
-                        <div class="course-name">סייבר ואבטחת מידע | ethnical hacking</div>
+                        <div class="course-name">שיווק דיגיטלי | seo/social/sales&marketing</div>
+                        <div class="arrow-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                <g id="Layer_2" data-name="Layer 2">
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <path class="cls-1" d="M15,30A15,15,0,1,1,30,15,15,15,0,0,1,15,30ZM25,13.75a1.26,1.26,0,0,0-1.25-1.25H14l3.69-3.69a1.23,1.23,0,0,0,0-1.76L15.86,5.27A1.24,1.24,0,0,0,15,4.92a1.26,1.26,0,0,0-.88.35L7,12.34,5.25,14.12a1.28,1.28,0,0,0,0,1.76L7,17.66l7.07,7.07a1.26,1.26,0,0,0,.88.35,1.24,1.24,0,0,0,.88-.35L17.64,23a1.28,1.28,0,0,0,0-1.76L14,17.5h9.8A1.26,1.26,0,0,0,25,16.25Z"></path>
+                                    </g>
+                                </g>
+                                <defs></defs>
+                                <title>arrow</title>
+                                <script xmlns=""></script>
+                            </svg>
+                        </div>
                     </div>
-                    <div id="embedded" class="course">
-                        <img class="course-image" src="embedded.png" alt="">
+                    <div id="qa" class="course">
+                        <img class="course-image" src="qa.png" alt="">
                         <div class="course-seperator"></div>
-                        <div class="course-name">פיתוח מערכות משובצות מחשב | embedded</div>
-                    </div>
-                    <div id="mobile" class="course">
-                        <img class="course-image" src="mobile.png" alt="">
-                        <div class="course-seperator"></div>
-                        <div class="course-name">פיתוח אפליקציות מובייל | ios/android</div>
-                    </div>
-                    <div id="fullstack" class="course">
-                        <img class="course-image" src="fullstack.png" alt="">
-                        <div class="course-seperator"></div>
-                        <div class="course-name">פיתוח תוכנה dot net/java/php | full stack</div>
+                        <div class="course-name">בדיקת תוכנה | qa & automation</div>
+                        <div class="arrow-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                <g id="Layer_2" data-name="Layer 2">
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <path class="cls-1" d="M15,30A15,15,0,1,1,30,15,15,15,0,0,1,15,30ZM25,13.75a1.26,1.26,0,0,0-1.25-1.25H14l3.69-3.69a1.23,1.23,0,0,0,0-1.76L15.86,5.27A1.24,1.24,0,0,0,15,4.92a1.26,1.26,0,0,0-.88.35L7,12.34,5.25,14.12a1.28,1.28,0,0,0,0,1.76L7,17.66l7.07,7.07a1.26,1.26,0,0,0,.88.35,1.24,1.24,0,0,0,.88-.35L17.64,23a1.28,1.28,0,0,0,0-1.76L14,17.5h9.8A1.26,1.26,0,0,0,25,16.25Z"></path>
+                                    </g>
+                                </g>
+                                <defs></defs>
+                                <title>arrow</title>
+                                <script xmlns=""></script>
+                            </svg>
+                        </div>
                     </div>
                     <div id="uiux" class="course">
                         <img class="course-image" src="uiux.png" alt="">
                         <div class="course-seperator"></div>
                         <div class="course-name">עיצוב גרפי | ui/ux</div>
+                        <div class="arrow-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                <g id="Layer_2" data-name="Layer 2">
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <path class="cls-1" d="M15,30A15,15,0,1,1,30,15,15,15,0,0,1,15,30ZM25,13.75a1.26,1.26,0,0,0-1.25-1.25H14l3.69-3.69a1.23,1.23,0,0,0,0-1.76L15.86,5.27A1.24,1.24,0,0,0,15,4.92a1.26,1.26,0,0,0-.88.35L7,12.34,5.25,14.12a1.28,1.28,0,0,0,0,1.76L7,17.66l7.07,7.07a1.26,1.26,0,0,0,.88.35,1.24,1.24,0,0,0,.88-.35L17.64,23a1.28,1.28,0,0,0,0-1.76L14,17.5h9.8A1.26,1.26,0,0,0,25,16.25Z"></path>
+                                    </g>
+                                </g>
+                                <defs></defs>
+                                <title>arrow</title>
+                                <script xmlns=""></script>
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="fullstack" class="course">
+                        <img class="course-image" src="fullstack.png" alt="">
+                        <div class="course-seperator"></div>
+                        <div class="course-name">פיתוח תוכנה dot net/java/php | full stack</div>
+                        <div class="arrow-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                <g id="Layer_2" data-name="Layer 2">
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <path class="cls-1" d="M15,30A15,15,0,1,1,30,15,15,15,0,0,1,15,30ZM25,13.75a1.26,1.26,0,0,0-1.25-1.25H14l3.69-3.69a1.23,1.23,0,0,0,0-1.76L15.86,5.27A1.24,1.24,0,0,0,15,4.92a1.26,1.26,0,0,0-.88.35L7,12.34,5.25,14.12a1.28,1.28,0,0,0,0,1.76L7,17.66l7.07,7.07a1.26,1.26,0,0,0,.88.35,1.24,1.24,0,0,0,.88-.35L17.64,23a1.28,1.28,0,0,0,0-1.76L14,17.5h9.8A1.26,1.26,0,0,0,25,16.25Z"></path>
+                                    </g>
+                                </g>
+                                <defs></defs>
+                                <title>arrow</title>
+                                <script xmlns=""></script>
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="mobile" class="course">
+                        <img class="course-image" src="mobile.png" alt="">
+                        <div class="course-seperator"></div>
+                        <div class="course-name">פיתוח אפליקציות מובייל | ios/android</div>
+                        <div class="arrow-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                <g id="Layer_2" data-name="Layer 2">
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <path class="cls-1" d="M15,30A15,15,0,1,1,30,15,15,15,0,0,1,15,30ZM25,13.75a1.26,1.26,0,0,0-1.25-1.25H14l3.69-3.69a1.23,1.23,0,0,0,0-1.76L15.86,5.27A1.24,1.24,0,0,0,15,4.92a1.26,1.26,0,0,0-.88.35L7,12.34,5.25,14.12a1.28,1.28,0,0,0,0,1.76L7,17.66l7.07,7.07a1.26,1.26,0,0,0,.88.35,1.24,1.24,0,0,0,.88-.35L17.64,23a1.28,1.28,0,0,0,0-1.76L14,17.5h9.8A1.26,1.26,0,0,0,25,16.25Z"></path>
+                                    </g>
+                                </g>
+                                <defs></defs>
+                                <title>arrow</title>
+                                <script xmlns=""></script>
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="embedded" class="course">
+                        <img class="course-image" src="embedded.png" alt="">
+                        <div class="course-seperator"></div>
+                        <div class="course-name">פיתוח מערכות משובצות מחשב | embedded</div>
+                        <div class="arrow-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                <g id="Layer_2" data-name="Layer 2">
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <path class="cls-1" d="M15,30A15,15,0,1,1,30,15,15,15,0,0,1,15,30ZM25,13.75a1.26,1.26,0,0,0-1.25-1.25H14l3.69-3.69a1.23,1.23,0,0,0,0-1.76L15.86,5.27A1.24,1.24,0,0,0,15,4.92a1.26,1.26,0,0,0-.88.35L7,12.34,5.25,14.12a1.28,1.28,0,0,0,0,1.76L7,17.66l7.07,7.07a1.26,1.26,0,0,0,.88.35,1.24,1.24,0,0,0,.88-.35L17.64,23a1.28,1.28,0,0,0,0-1.76L14,17.5h9.8A1.26,1.26,0,0,0,25,16.25Z"></path>
+                                    </g>
+                                </g>
+                                <defs></defs>
+                                <title>arrow</title>
+                                <script xmlns=""></script>
+                            </svg>
+                        </div>
                     </div>
                 </div>
                 
@@ -134,12 +294,14 @@
     <div class="pro-section">
         <h2>למה ללמוד אצלנו?</h2>
         <p class="pro-text">יש הרבה סיבות מדוע ללמוד אצלנו ומדוע אנחנו בית הספר להיי-טק הטוב בישראל. אבל בסופו של דבר הכל נובע מסיבה אחת פשוטה:</p>
-        <p class="pro-text">אתם רוצים לפתוח קריירה בענף ההיי-טק והולכים ללמוד קורס רק מסיבה אחת - להתקבל לעבודה!</p>
-        <p class="pro-text">אנחנו בית הספר היחיד שמרוויח כסף רק ואך ורק אם אכן תתקבלו לעבודה.</p>
-
+        <p class="pro-text"> <strong>אתם רוצים לפתוח קריירה בענף ההיי-טק והולכים ללמוד קורס רק מסיבה אחת - להתקבל לעבודה!</strong></p>
+        <p class="pro-text" style="color: blue"> אנחנו בית הספר היחיד שמרוויח כסף                 
+             <strong>&nbsp;רק ואך ורק&nbsp;</strong> 
+              אם אכן תתקבלו לעבודה.
+        </p>
         <div class="pro-blocks">
             <div class="rest-of-the-market pro-block">
-                <p>בשאר השוק - תגיעו להתעניין בלימודים ותקבלו מאנשי המכירות יחס נפלא, תשמעו הבטחות מהממות, ויופעלו עליכם תרגילים שיווקיים מכל הבא ליד כדוגמת ״התחייבות לעבודה״ חסרת כל משמעות, ירשמו אתכם לקורס ויגבו מכם מראש שכר לימוד מלא. מרגע זה בגדול בית הספר עשה את שלו - תצליחו, לא תצליחו, תמצאו עבודה, לא תמצאו עבודה זה כבר פחות משנה. בהתאם ברוב בתי הספר, למרות מאמצים וכוונות טובות בדרך כלל, מתגלות הבעיות הבאות:</p>
+                <p><strong>בשאר השוק </strong>- תגיעו להתעניין בלימודים ותקבלו מאנשי המכירות יחס נפלא, תשמעו <strong><u>הבטחות מהממות</u></strong>, ויופעלו עליכם <strong><u>תרגילים שיווקיים מכל הבא ליד כדוגמת ״התחייבות לעבודה״ חסרת כל משמעות</u></strong>, ירשמו אתכם לקורס ויגבו מכם מראש שכר לימוד מלא. מרגע זה בגדול בית הספר עשה את שלו - תצליחו, לא תצליחו, תמצאו עבודה, לא תמצאו עבודה זה כבר פחות משנה. בהתאם ברוב בתי הספר, למרות מאמצים וכוונות טובות בדרך כלל, מתגלות הבעיות הבאות:</p>
                 <ol>
                     <li>לא קיים תהליך אבחון ומיון אמיתי - ״יועצי לימודים״ הינם בעצם אנשי מכירות, המתוגמלים על פי כמות הנרשמים, ובהתאם רושמים המון מועמדים שאין להם מראש סיכוי אמיתי להצליח בקורסים ולהתקבל לעבודה בסיום ההכשרה.</li>
                     <li>קורסים הכוללים הרבה מועמדים חלשים מתנהלים בקצב איטי. כתוצאה מכך למרות כמות שעות לימוד גדולה, ״על הנייר״, מספיקים לעבור על הנושאים בצורה שטחית בלבד.</li>
@@ -149,7 +311,7 @@
                 <p>כתוצאה מכך, ברוב בתי הספר , בדרך כלל כמחצית התלמידים נושרים מהקורס עד שהקורס מסתיים, וכמות הבוגרים שמצליחים להשתלב בתעשיית ההיי-טק במקצוע אותו למדו בקורס נמוכה מאוד. לצערנו, בעידן הקורונה, מסתיים לעיתים קורס מבלי שאפילו בוגר אחד מוצא עבודה בתפקיד אליו הוכשר...</p>
             </div>
             <div class="at-ours pro-block">
-                <p>אצלנו לעומת זאת הכל הפוך - אם לא תתקבלו לעבודה בתחום אותו למדתם אצלנו לא תשלמו בכלל שכר לימוד!</p>
+                <p><strong>אצלנו </strong>לעומת זאת הכל הפוך - אם לא תתקבלו לעבודה בתחום אותו למדתם אצלנו לא תשלמו בכלל שכר לימוד!</p>
                 <p>בהתאם הדברים מתנהלים בצורה הבאה:</p>
                 <ol>
                     <li>כשתפנו אלינו תעברו תהליך אבחון, יעוץ ומיון מקצועי אמיתי. לצערנו רוב המועמדים מקבלים תשובה ישירה וכנה שהתחום לא מתאים להם, שלא נקבל אותם לקורס וחבל על בזבוז הזמן שלהם.</li>
@@ -220,12 +382,13 @@
         <p>בית הספר היחיד שפיתח מערכות יעודיות ואימץ באופן מלא שיטות הדרכה מתקדמות מרחוק - שנים לפני שמישהו שמע על נגיף הקורונה.</p>
         <p>
             <strong>בשנות הפעילות הראשונות שלנו</strong>
-            , העברנו קורסי הכשרה במודל המקובל בשוק - קורסים במגוון תחומים גדול המקבילים לקיים בשוק  ובתשלום מראש.
+            &nbsp , העברנו קורסי הכשרה במודל המקובל בשוק - קורסים במגוון תחומים גדול המקבילים לקיים בשוק  ובתשלום מראש.
         </p>
         <p>
-            <strong>לאחר מכן הקמנו את מיזם ״תלפיות היי-טק״</strong>
-            .תלפיות היי-טק מתמקד בהכשרה ארוכה ומעמיקה מאוד של אנשי פיתוח,במגוון גדול של טכנולוגיות ובמודל בו התלמידים לא משלמים כלל שכר לימוד ומתחייבים לעבוד אצלנו מספר שנים.</p>
-        <p>כעת, לאור התקופה הקשה העוברת על המשק הישראלי, כאשר מאות אלפי מובטלים מחפשים כיוון מקצועי ונושאים עיניהם אל תעשיית ההיי-טק, החלטנו להטות כתף, להיות החלוצים ולהפוך לבית הספר היחיד, שמציע מסגרות הכשרה חסרות סיכון במודל ״לא עבדת לא שילמת״.</p>
+            <strong>לאחר מכן הקמנו את מיזם ״תלפיות היי-טק״</strong> .תלפיות היי-טק מתמקד בהכשרה ארוכה ומעמיקה מאוד של אנשי פיתוח,במגוון גדול של טכנולוגיות ובמודל בו התלמידים לא משלמים כלל שכר לימוד ומתחייבים לעבוד אצלנו מספר שנים.</p>
+        <p><strong>כעת, לאור התקופה הקשה העוברת על המשק הישראלי, </strong>
+             כאשר מאות אלפי מובטלים מחפשים כיוון מקצועי ונושאים עיניהם אל תעשיית ההיי-טק, החלטנו להטות כתף, להיות החלוצים 
+             <strong>ולהפוך לבית הספר היחיד, שמציע מסגרות הכשרה חסרות סיכון במודל ״לא עבדת לא שילמת״.</strong></p>
         <p>הייפראקטיב הינה ״מכללת בוטיק״ - אנחנו סלקטיביים מאוד ומטפלים בכמות מצומצמת של מועמדים שמשכנעים אותנו שיש להם את מה שנדרש כדי לפתח קריירה משגשגת בענף ההי-טק.</p>
         <p>אנו מלווים באופן צמוד את הבוגרים גם לאחר שהתקבלו לעבודה לאורך הקריירה שלהם - בעצות טובות, הפעלת קשרים כשנדרש ושרותי סוכן אישי צמוד - אנו רואים בבוגרינו משאב רב ערך לתעשית ההיי-טק והמשק הישראלי והם מקבלים את מלוא התמיכה לה הם ראויים בהתאם.</p>
     </div>
@@ -234,36 +397,45 @@
         <div class="how-it-works">
             <div class="how-it-works-content">
                 <div class="square-1">
-                    <div class="triangle"></div>
-                    <div class="square-text-container">
+                    <div class="section-header">
                         <h4>אבחון, יעוץ ומיון</h4>
-                        <p>לאורך השנים גיבשנו תהליך מדעי לבדיקת התאמה לתחומי העיסוק השונים בענף ההיי-טק.</p>
-                        <p>מועמדים רבים פונים אלינו לאחר שהתקבלו לקורסים בבתי ספר אחרים ומתאכזבים לקבל מאיתנו תשובה שלילית. חשוב להבין כי אנחנו מרוויחים רק כאשר מועמד מתקבל לעבודה ולכן נדרשים לבחינה מעמיקה בהרבה שבוחנת את פוטנציאל המועמד לעמוד ב-2 הדרישות המרכזיות לעבודה בתפקידים בענף ההיי-טק:</p>
-                        <ol>
-                            <li>פרופיל אישיותי מתאים.</li>
-                         <li>יכולת טכנית וידע מקצועי מעמיק.</li>
-                        </ol>
-                        <p>בשלב ראשון תגישו מועמדות דרך האתר. לאחר מכן יתקיים ראיון טלפוני ראשון שלאחריו תתבקשו להשלים פרטים ונתונים נוספים הנדרשים לשלב המיון הראשון. בשלב שני תקבלו מבדקי בית לפתרון בזמן מוגבל ומתואם מראש. בשלב שלישי תזומנו לראיון אישי עם מנהל ההדרכה ולמבדקי קבלה נוספים. אנחנו מעריכים את המועמדים שלנו ומתחייבים לחזור לכל מועמד עם תשובה.</p>
+                        <div class="plus-sign">+</div>
                     </div>
-                    
+                    <p class="how-it-works-text">לאורך השנים גיבשנו תהליך מדעי לבדיקת התאמה לתחומי העיסוק השונים בענף ההיי-טק.</p>
+                    <p class="how-it-works-text">מועמדים רבים פונים אלינו לאחר שהתקבלו לקורסים בבתי ספר אחרים ומתאכזבים לקבל מאיתנו תשובה שלילית. חשוב להבין כי אנחנו מרוויחים רק כאשר מועמד מתקבל לעבודה ולכן נדרשים לבחינה מעמיקה בהרבה שבוחנת את פוטנציאל המועמד לעמוד ב-2 הדרישות המרכזיות לעבודה בתפקידים בענף ההיי-טק:</p>
+                    <p class="how-it-works-text">
+                        א. פרופיל אישיותי מתקדם
+                        <br>
+                        ב. יכולת טכנית וידע מקצועי מעמיק
+                    </p>
+                    <p class="how-it-works-text">בשלב ראשון תגישו מועמדות דרך האתר. לאחר מכן יתקיים ראיון טלפוני ראשון שלאחריו תתבקשו להשלים פרטים ונתונים נוספים הנדרשים לשלב המיון הראשון. בשלב שני תקבלו מבדקי בית לפתרון בזמן מוגבל ומתואם מראש. בשלב שלישי תזומנו לראיון אישי עם מנהל ההדרכה ולמבדקי קבלה נוספים. אנחנו מעריכים את המועמדים שלנו ומתחייבים לחזור לכל מועמד עם תשובה.</p>                    
+                    <div class="triangle how-it-works-text"></div>
                     
                 </div>
                 <div class="square-2">
-                    <h4>מסלול הכשרה</h4>
-                    <p>למועמדים שיעברו בהצלחה את תהליכי האבחון ימונה מנהל תוכנית אישי. המנהל האישי ישב עם המועמד ויגדיר עימו מסגרת הכשרה מותאמת אישית. המסגרת תקבע בהתאם לשאיפות וההעדפות התעסוקתיות של המועמד, יכולת המועמד להתמקד אך ורק בלימודים או הצורך של המועמד ללמוד במסלול ערב במקביל להמשך עבודה במקום העבודה הנוכחי שלו ובהתאם לרקע הלימודי/אקדמי הקודם של המועמד וציוני בדיקות ההתאמה שלו.</p>
-                    <p>כל מסלולי ההכשרה כוללים הן בסיס תיאורטי רחב, הן ידע טכני פרקטי והן פרוייקטים מעשיים. ההכשרות השונות מועברות בתקופת הקורונה בלימודים מרחוק תוך שילוב טכנולוגיות מתקדמות יחודיות שפותחו לאורך השנים בהייפראקטיב - הכשרות פרונטליות רגילות, מנטורינג על ידי אנשי מקצוע מהתעשיה, פרוייקטים אישיים, סדנאות מיוחדות בקבוצות קטנות.</p>
-                    <div class="triangle"></div>
+                    <div class="section-header">
+                        <h4>מסלול הכשרה</h4>
+                        <div class="plus-sign">+</div>
+                    </div>
+                    <p class="how-it-works-text">למועמדים שיעברו בהצלחה את תהליכי האבחון ימונה מנהל תוכנית אישי. המנהל האישי ישב עם המועמד ויגדיר עימו מסגרת הכשרה מותאמת אישית. המסגרת תקבע בהתאם לשאיפות וההעדפות התעסוקתיות של המועמד, יכולת המועמד להתמקד אך ורק בלימודים או הצורך של המועמד ללמוד במסלול ערב במקביל להמשך עבודה במקום העבודה הנוכחי שלו ובהתאם לרקע הלימודי/אקדמי הקודם של המועמד וציוני בדיקות ההתאמה שלו.</p>
+                    <p class="how-it-works-text">כל מסלולי ההכשרה כוללים הן בסיס תיאורטי רחב, הן ידע טכני פרקטי והן פרוייקטים מעשיים. ההכשרות השונות מועברות בתקופת הקורונה בלימודים מרחוק תוך שילוב טכנולוגיות מתקדמות יחודיות שפותחו לאורך השנים בהייפראקטיב - הכשרות פרונטליות רגילות, מנטורינג על ידי אנשי מקצוע מהתעשיה, פרוייקטים אישיים, סדנאות מיוחדות בקבוצות קטנות.</p>
+                    <div class="triangle how-it-works-text"></div>
                 </div>
                 <div class="square-3">
-                    <div class="triangle"></div>
-                    <h4>קריירה חדשה</h4>
-                    <p>עשיתם את זה, נכנסתם לענף ההיי-טק. אתם עובדים באחת מחברות ההיי-טק המובילות בישראל. אנחנו עדיין עומדים לרשותכם לעזרה, ליתר בטחון. אם תרצו גם נסייע לכם כסוכן אישי להמשיך לקדם אתכם בענף לתפקידים ומשכורות גבוהים יותר לאורך הקריירה.</p>
-                    
+                    <div class="section-header">
+                        <h4>קריירה חדשה</h4>
+                        <div class="plus-sign">+</div>
+                    </div>
+                    <p class="how-it-works-text">עשיתם את זה, נכנסתם לענף ההיי-טק. אתם עובדים באחת מחברות ההיי-טק המובילות בישראל. אנחנו עדיין עומדים לרשותכם לעזרה, ליתר בטחון. אם תרצו גם נסייע לכם כסוכן אישי להמשיך לקדם אתכם בענף לתפקידים ומשכורות גבוהים יותר לאורך הקריירה.</p>
+                    <div class="triangle how-it-works-text"></div>
                 </div>
                 <div class="square-4">
-                    <h4>תהליך השיבוץ</h4>
-                    <p>עם סיום ההכשרה, תעברו לטיפול מחלקת ההשמה - תעברו סדנת הכנה ואימון מתקדם לקראת ראיונות עבודה, תעברו סדרת ראיונות אצל לקוחות עד שתתקבלו לעבודה המיוחלת במקצוע אותו למדתם. רק לאחר שנקלטתם בעבודה תסדירו את תשלום שכר הלימוד על הקורס אותו עברתם…</p>
-                    <div class="triangle"></div>
+                    <div class="section-header">
+                        <h4>תהליך השיבוץ</h4>
+                        <div class="plus-sign">+</div>
+                    </div>
+                    <p class="how-it-works-text">עם סיום ההכשרה, תעברו לטיפול מחלקת ההשמה - תעברו סדנת הכנה ואימון מתקדם לקראת ראיונות עבודה, תעברו סדרת ראיונות אצל לקוחות עד שתתקבלו לעבודה המיוחלת במקצוע אותו למדתם. רק לאחר שנקלטתם בעבודה תסדירו את תשלום שכר הלימוד על הקורס אותו עברתם…</p>
+                    <div class="triangle how-it-works-text"></div>
                 </div>
                 
             </div>
@@ -275,7 +447,7 @@
     <div class="questions">
         <div class="questions-section">
             <h2>שאלות שכנראה תשאלו</h2>
-            <div class="question-and-answrs-container">
+            <div class="question-and-answers-container">
                 <div class="question-column">
                     <div class="question-section">
                         <div class="question">
@@ -296,7 +468,7 @@
                         </div>
                         <div class="answer">
                             הכל בסדר. אצלנו זוֹ לא בעיה. לא תצטרכו לשלם מראש. לא תצטרכו לקחת הלוואה. שום דבר תשלמו על הלימודים רק אחרי שתתחילו לעבוד וגם אז התשלום יתבצע בתשלום חודשי קטן קבוע.
-                         </div>
+                        </div>
                     </div>
                     <div class="question-section">
                         <div class="question">
@@ -304,7 +476,8 @@
                             <i class="fas fa-arrow-circle-down" aria-hidden="true">  
                             </i>
                         </div>
-                        <div class="answer">בתקופת הקורונה אנחנו מלמדים בכל מקום בארץ on line באמצעות שיטות הדרכה מתקדמות.
+                        <div class="answer">
+                            בתקופת הקורונה אנחנו מלמדים בכל מקום בארץ on line באמצעות שיטות הדרכה מתקדמות.
                         </div>
                     </div>
                     <div class="question-section">
@@ -346,8 +519,9 @@
                             <i class="fas fa-arrow-circle-down" aria-hidden="true">  
                             </i>
                         </div>
-                        <div class="answer">
+                        <div class="answer"> 
                             הגש מועמדות באמצעות הטופס ונתחיל בתהליך האבחון, היעוץ והמיון המקצועי שלנו ללא כל עלות וללא כל מחויבות. נחזיק לך אצבעות שתמצא מתאים לאחד המקצועות בענף ההיי-טק!
+            
                         </div>
                     </div>
                     <div class="question-section">
@@ -358,15 +532,20 @@
                         </div>
                         <div class="answer">
                             קודם כל אתה יכול להתנחם בכך שאינך יוצא דופן, חיפוש קצר בקבוצות פייסבוק יגלה לך שרוב בוגרי הקורסים נקלעים לאותה סיטואציה שאתה הגעת אליה.
-
-יש 3 אפשרויות למה סיימת קורס בבית ספר אחר ולא מצאת עבודה:
-‫הקורס שלמדת לא היה מקיף ו/או לא הועבר ברמה הנדרשת.
-‬אתה לא מתאים לתחום אליו קיבלו אותך ללימודים.
-אתה לא מתאים מבחינת הפרופיל האישיותי למקצוע שלמדת ו/או ״לא יודע איך לעבור ראיון״.
-
-הגש אלינו מועמדות באמצעות הטופס, נתחיל בתהליך האבחון, היעוץ והמיון המקצועי שלנו ללא כל עלות וללא כל מחויבות. בסיום התהליך נוכל לתת לך תשובה מדויקת מה הסיבה שלא התקבלת לעבודה.
-במידה ויתברר שאתה מתאים לתחום אותו למדת ובעל פרופיל אישיותי מתאים, נתאים לך השלמת הכשרה מותאמת אישית שתכניס אותך לענף. כאמור, על הכשרות אצלנו לא משלמים שקל אם לא מתקבלים לעבודה…
-                         </div>
+                            <br>
+                            <br>
+                            יש 3 אפשרויות למה סיימת קורס בבית ספר אחר ולא מצאת עבודה:
+                            <ol>
+                                <li>הקורס שלמדת לא היה מקיף ו/או לא הועבר ברמה הנדרשת.</li>
+                                <li>אתה לא מתאים לתחום אליו קיבלו אותך ללימודים.</li>
+                                <li>אתה לא מתאים מבחינת הפרופיל האישיותי למקצוע שלמדת ו/או ״לא יודע איך לעבור ראיון״.</li>
+                            </ol>
+                            <br>
+                            הגש אלינו מועמדות באמצעות הטופס, נתחיל בתהליך האבחון, היעוץ והמיון המקצועי שלנו ללא כל עלות וללא כל מחויבות. בסיום התהליך נוכל לתת לך תשובה מדויקת מה הסיבה שלא התקבלת לעבודה.
+                            <br>
+                            במידה ויתברר שאתה מתאים לתחום אותו למדת ובעל פרופיל אישיותי מתאים, נתאים לך השלמת הכשרה מותאמת אישית שתכניס אותך לענף. כאמור, על הכשרות אצלנו לא משלמים שקל אם לא מתקבלים לעבודה…
+                          
+                        </div>
                     </div>
                     <div class="question-section">
                         <div class="question">
@@ -376,13 +555,19 @@
                         </div>
                         <div class="answer">
                             גם בוגרי תואר ראשון במדעי המחשב ממכללות נתקלים בימים אלה בקשיים גדולים בקבלה לעבודה הראשונה בענף ההיי-טק. במיוחד כאשר הם מחפשים עבודה ראשונה בפיתוח תוכנה.
-
+                            <br>
+                            <br>
                             יש 2 אפשרויות מדוע סיימת תואר אקדמי במכללה ולא מצאת עבודה:
-                            למרות רקע תאורטי רחב, חסר לך ידע פרקטי במקצוע המבוקש בענף ההי-טק - במיוחד כשדברים אמורים בפיתוח תוכנה.
-                            אתה לא מתאים מבחינת הפרופיל האישיותי למקצוע המבוקש ו/או ״לא יודע איך לעבור ראיון״.
-                            
+                            <ol>
+                                <li> למרות רקע תאורטי רחב, חסר לך ידע פרקטי במקצוע המבוקש בענף ההי-טק - במיוחד כשדברים אמורים בפיתוח תוכנה.</li>
+                                <li> אתה לא מתאים מבחינת הפרופיל האישיותי למקצוע המבוקש ו/או ״לא יודע איך לעבור ראיון״.</li>
+                            </ol>
+                           <br>
                             הגש אלינו מועמדות באמצעות הטופס, נתחיל בתהליך האבחון, היעוץ והמיון המקצועי שלנו ללא כל עלות וללא כל מחויבות. בסיום התהליך נוכל לתת לך תשובה מדויקת מה הסיבה שלא התקבלת לעבודה.
-                            במידה ויתברר שאתה מתאים למקצוע אליו ברצונך להתקבל, נתאים לך השלמת הכשרה מותאמת אישית שתכניס אותך לענף. כאמור, על הכשרות אצלנו לא משלמים שקל אם לא מתקבלים לעבודה…                        </div>
+                            <br>
+                            במידה ויתברר שאתה מתאים למקצוע אליו ברצונך להתקבל, נתאים לך השלמת הכשרה מותאמת אישית שתכניס אותך לענף. כאמור, על הכשרות אצלנו לא משלמים שקל אם לא מתקבלים לעבודה…                       
+                     
+                        </div>
                     </div>
                     <div class="question-section">
                         <div class="question">
@@ -392,7 +577,8 @@
                         </div>
                         <div class="answer">
                             יכול להיות שכן ויכול להיות שלא. אם תסיים תואר במדעי המחשב באוניברסיטה כמו הטכניון, אוניברסיטת תל אביב ודומיה בממוצע 85+ זה בפירוש יעזור. לעומת זאת תואר במדעי המחשב מחלק מהמכללות יעזור הרבה פחות וכשמדובר על קבלה לעבודה בפיתוח תוכנה במקרים רבים לא ישנה את המצב.
-פנה אלינו להליך האבחון, היעוץ והמיון המקצועי שלנו ללא כל עלות וללא כל מחויבות.
+                            <br>
+                            פנה אלינו להליך האבחון, היעוץ והמיון המקצועי שלנו ללא כל עלות וללא כל מחויבות.
                         </div>
                     </div>
                     <div class="question-section">
@@ -433,8 +619,8 @@
 
     <div class="public-questions">
         <div class="questions-section">
-            <h2>שאלות שכנראה תשאלו</h2>
-            <div class="question-and-answrs-container">
+            <h2>שירות לציבור</h2>
+            <div class="question-and-answers-container">
                 <div class="question-column">
                     <div class="question-section">
                         <div class="question">
@@ -557,6 +743,19 @@
         ?היי! אנחנו פה,יש לך שאלה
         <svg width="20" height="20" aria-hidden="true" data-prefix="fab" data-icon="whatsapp" class="svg-inline--fa fa-whatsapp fa-w-14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#fff" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>
     </div>
+
+    <div class="whatsapp-and-information">
+        <div class="contact-box">
+            <div class="contact-box-text">וואטסאפ</div>
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </div>
+        <div class="contact-box">
+            <div class="contact-box-text">לפרטים</div>
+            <i class="far fa-hand-point-up"></i>
+        </div>
+    </div>
+
+    <script src="hyperActive.js"></script>
 
 </body>
 </html>
